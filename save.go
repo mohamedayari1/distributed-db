@@ -35,6 +35,7 @@ func SaveData2(path string, data []byte) error {
 			os.Remove(tmp)
 		}
 	}()
+
 	_, err = fp.Write(data)
 	if err != nil {
 		return err
